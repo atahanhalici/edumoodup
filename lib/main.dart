@@ -1,14 +1,5 @@
-import 'package:edumoodup/pages/about_application_page.dart';
-import 'package:edumoodup/pages/acccountSettings_page.dart';
-import 'package:edumoodup/pages/change_password_page.dart';
-import 'package:edumoodup/pages/developer_group_page.dart';
-import 'package:edumoodup/pages/discontinuity_page.dart';
+import 'package:edumoodup/const.dart';
 import 'package:edumoodup/pages/login_page.dart';
-import 'package:edumoodup/pages/select_register_page.dart';
-import 'package:edumoodup/pages/student_register_page.dart';
-import 'package:edumoodup/pages/student_page.dart';
-import 'package:edumoodup/pages/graphic_page.dart';
-import 'package:edumoodup/pages/teacher_register_page.dart';
 import 'package:edumoodup/route_generator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -32,7 +23,7 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: RouteGenerator.rotaOlustur,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: anaRenk),
         useMaterial3: true,
       ),
       home: const LoginPage(),

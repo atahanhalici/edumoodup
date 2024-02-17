@@ -100,7 +100,7 @@ class _LoginPageState extends State<TeacherPage> {
                               "Merhaba Furkan 🖐️",
                               style: TextStyle(
                                   fontFamily: "Poppins",
-                                  fontSize: 36,
+                                  fontSize: 34,
                                   fontWeight: FontWeight.bold,
                                   color: Colors.black),
                             ),
@@ -121,7 +121,7 @@ class _LoginPageState extends State<TeacherPage> {
                                       width: 75,
                                     ),
                                     const SizedBox(
-                                      width: 15,
+                                      width: 10,
                                     ),
                                     const Text(
                                       "Güneşli",
@@ -132,7 +132,7 @@ class _LoginPageState extends State<TeacherPage> {
                                           color: Colors.white),
                                     ),
                                     const SizedBox(
-                                      width: 15,
+                                      width: 10,
                                     ),
                                     Text(
                                       "29°",
@@ -239,7 +239,7 @@ class _LoginPageState extends State<TeacherPage> {
                     width: 15,
                   ),
                   SizedBox(
-                    width: (size.width / 2) - 25,
+                    width: (size.width / 2) - 40,
                     child: Text(
                       adi,
                       overflow: TextOverflow.ellipsis,

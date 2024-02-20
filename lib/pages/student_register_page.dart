@@ -253,10 +253,10 @@ class _RegisterPageState extends State<StudentRegisterPage> {
             ),
             validator: (deger) {
               if (deger!.isEmpty) {
-                return "${ozellik[0] + ozellik.substring(1).toLowerCase()} Kısmı Boş Bırakılamaz!";
+                return "${ozellik[0] + ozellik.substring(1).toLowerCase()} Part cannot be left blank";
               } else if (ozellik == "E-MAIL") {
                 if ((!deger.contains("@") || !deger.contains("."))) {
-                  return "Geçersiz Mail Formatı. Lütfen Kontrol Ediniz";
+                  return "Invalid Mail Format. Please Check";
                 }
               } else {}
               return null;

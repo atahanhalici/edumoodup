@@ -50,7 +50,7 @@ class _LoginPageState extends State<ChangePasswordPage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  const Text("Şifre Değiştir",
+                                  const Text("Change Password",
                                       style: TextStyle(
                                           fontFamily: "Poppins",
                                           fontSize: 35,
@@ -62,9 +62,9 @@ class _LoginPageState extends State<ChangePasswordPage> {
                                   const SizedBox(
                                     height: 50,
                                   ),
-                                  TextArea("Mevcut Şifre"),
-                                  TextArea("Yeni Şifre"),
-                                  TextArea("Yeni Şifre (Tekrar)"),
+                                  TextArea("Current Password"),
+                                  TextArea("New Password"),
+                                  TextArea("New Password (Again)"),
                                   const SizedBox(
                                     height: 20,
                                   ),
@@ -79,7 +79,7 @@ class _LoginPageState extends State<ChangePasswordPage> {
                                           color: ikinciRenk),
                                       child: const Center(
                                         child: Text(
-                                          "Şifremi Değiştir",
+                                          "Change Password",
                                           style: TextStyle(
                                               fontFamily: "Poppins",
                                               fontSize: 20,
@@ -145,10 +145,10 @@ class _LoginPageState extends State<ChangePasswordPage> {
             ),
             validator: (deger) {
               if (deger!.isEmpty) {
-                return "${ozellik[0] + ozellik.substring(1).toLowerCase()} Kısmı Boş Bırakılamaz!";
+                return "${ozellik[0] + ozellik.substring(1).toLowerCase()} Part cannot be left blank!";
               } else if (ozellik == "E-MAIL") {
                 if ((!deger.contains("@") || !deger.contains("."))) {
-                  return "Geçersiz Mail Formatı. Lütfen Kontrol Ediniz";
+                  return "Invalid Mail Format. Please Check";
                 }
               } else {}
               return null;

@@ -96,7 +96,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                               height: 10,
                             ),
                             const Text(
-                              "Haftalık Ders Programı",
+                              "Weekly Course Program",
                               style: TextStyle(
                                   fontFamily: "Poppins",
                                   fontSize: 25,
@@ -119,7 +119,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                                       child: const Padding(
                                         padding: EdgeInsets.only(left: 30.0),
                                         child: Text(
-                                          "Pazartesi",
+                                          "Monday",
                                           style: TextStyle(
                                               fontFamily: "Poppins",
                                               fontSize: 20,
@@ -138,7 +138,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                                       child: const Padding(
                                         padding: EdgeInsets.only(left: 30.0),
                                         child: Text(
-                                          "Salı",
+                                          "Tuesday",
                                           style: TextStyle(
                                             color: Colors.white,
                                             fontFamily: "Poppins",
@@ -158,7 +158,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                                       child: const Padding(
                                         padding: EdgeInsets.only(left: 30.0),
                                         child: Text(
-                                          "Çarşamba",
+                                          "Wednesday",
                                           style: TextStyle(
                                               fontFamily: "Poppins",
                                               fontSize: 20,
@@ -197,7 +197,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
           width: 15,
         ),
         const Text(
-          "Matematik 1",
+          "Mathematics 1",
           style: TextStyle(
               fontFamily: "Poppins",
               fontSize: 25,
@@ -278,7 +278,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Text(
-                            "Tıkla",
+                            "Click",
                             style: TextStyle(
                                 fontFamily: "Poppins",
                                 color: Colors.white,
@@ -318,7 +318,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                   height: 20,
                 ),
                 Text(
-                  "$dersAdi Nasıldı?",
+                  "How it was $dersAdi?",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontFamily: "Poppins",
@@ -368,7 +368,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                     ),
                     child: const Center(
                       child: Text(
-                        "Girmedim",
+                        "I didn't enter",
                         style: TextStyle(
                             fontFamily: "Poppins",
                             fontSize: 20,

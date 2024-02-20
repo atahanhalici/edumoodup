@@ -115,7 +115,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                   height: 10,
                                 ),
                                 Text(
-                                  "EduMoodUp Hakkında",
+                                  "About EduMoodUp",
                                   style: TextStyle(
                                     fontFamily: "Poppins",
                                     fontSize: 30,
@@ -132,7 +132,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                               MainAxisAlignment.center,
                                           children: [
                                             Text(
-                                              "EduMoodUp, öğrencilerin duygusal durumlarını emoji tabanlı bir sistemle ölçerek ders verimliliğini artırmayı ve öğrenci-öğretmen iletişimini güçlendirmeyi amaçlayan yenilikçi bir eğitim projesidir. Platform, öğrencilerin günlük duygusal durumlarını ifade etmelerine olanak tanırken, öğretmenlere öğrencilerin duygusal ihtiyaçlarını anlama ve buna göre ders planlarını ayarlama imkanı sunar. Bu sayede öğretmenler, öğrencilerin psikolojik durumlarını dikkate alarak daha etkili bir öğrenme ortamı oluşturabilir ve ders verimliliğini artırabilirler. EduMoodUp, modern eğitimde duygusal zeka ve iletişimin önemini vurgulayarak öğrenci merkezli bir yaklaşımı teşvik etmekte ve geleceğin eğitimine katkıda bulunmaktadır.",
+                                              "EduMoodUp is an innovative educational project that aims to increase lesson efficiency and strengthen student-teacher communication by measuring students' emotional states with an emoji-based system. The platform allows students to express their daily emotional states, while allowing teachers to understand students' emotional needs and adjust lesson plans accordingly. In this way, teachers can create a more effective learning environment and increase lesson efficiency by taking into account students' psychological states. By emphasizing the importance of emotional intelligence and communication in modern education, EduMoodUp promotes a student-centered approach and contributes to the education of the future.",
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
@@ -144,7 +144,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                               height: 10,
                                             ),
                                             Text(
-                                              "Eğitim",
+                                              "Education",
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
                                                 fontSize: 20,
@@ -153,7 +153,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                             ),
                                             Divider(),
                                             Text(
-                                              "Öğrencilerin duygusal durumlarını anlama ve öğrenme süreçlerini iyileştirme amacıyla eğitimde duygusal zeka ve iletişimin önemini vurgular.",
+                                              "Emphasizes the importance of emotional intelligence and communication in education in order to understand students' emotional states and improve their learning processes.",
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
@@ -165,7 +165,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                               height: 10,
                                             ),
                                             Text(
-                                              "Çalışma",
+                                              "Study",
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
                                                 fontSize: 20,
@@ -174,7 +174,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                             ),
                                             Divider(),
                                             Text(
-                                              "Öğretmenlere öğrencilerin duygusal durumlarını daha iyi anlama ve buna göre ders planlarını ayarlama imkanı sunarak işlerini kolaylaştırır ve ders verimliliğini artırır.",
+                                              "It allows teachers to better understand students' emotional states and adjust lesson plans accordingly, making their work easier and increasing lesson efficiency.",
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
@@ -186,7 +186,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                               height: 10,
                                             ),
                                             Text(
-                                              "Hayat",
+                                              "Life",
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
                                                 fontSize: 20,
@@ -195,7 +195,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                             ),
                                             Divider(),
                                             Text(
-                                              "Bireylerin günlük yaşamlarında duygusal ihtiyaçlarını anlama ve sağlıklı iletişimi teşvik ederek daha dengeli ve mutlu bir yaşam süreci için destek sağlar.",
+                                              "It provides support for a more balanced and happy life process by understanding the emotional needs of individuals in their daily lives and promoting healthy communication.",
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
@@ -207,7 +207,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                               height: 10,
                                             ),
                                             Text(
-                                              "Dünya",
+                                              "World",
                                               style: TextStyle(
                                                 fontFamily: "Poppins",
                                                 fontSize: 20,
@@ -216,7 +216,7 @@ class _LoginPageState extends State<AboutApplicationPage> {
                                             ),
                                             Divider(),
                                             Text(
-                                              "Toplumun her kesiminde duygusal ihtiyaçları anlama ve iletişimi güçlendirme yolunda bir adım olarak dünya genelinde benimsenmeyi hedefler.",
+                                              "It aims to be adopted worldwide as a step towards understanding emotional needs and strengthening communication in all segments of society.",
                                               textAlign: TextAlign.center,
                                               style: TextStyle(
                                                 fontFamily: "Poppins",

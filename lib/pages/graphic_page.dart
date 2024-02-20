@@ -16,27 +16,27 @@ class _LoginPageState extends State<GraphicPage> {
   int aktifSayfa = 0;
   String? ders;
   final List<String> _tumDersler = [
-    "Algoritma ve Programlama 1",
+    "Algorithm and Programming 1",
   ];
   String? hafta;
   final List<String> _tumHaftalar = [
-    "1. Hafta",
+    "Week 1",
   ];
 
   CarouselController carouselController = CarouselController();
   var basicData = [
-    {'genre': 'Minnoş', 'sold': 16.7},
-    {'genre': 'Mutlu', 'sold': 16.7},
-    {'genre': 'Güzel', 'sold': 16.7},
-    {'genre': 'Üzgün', 'sold': 33.3},
-    {'genre': 'Tatlı', 'sold': 16.7},
+    {'genre': 'Minnie', 'sold': 16.7},
+    {'genre': 'Happy', 'sold': 16.7},
+    {'genre': 'Beautiful', 'sold': 16.7},
+    {'genre': 'Sad', 'sold': 33.3},
+    {'genre': 'Sweet', 'sold': 16.7},
   ];
   var lineMarkerData = [
-    {'item': 'Öğe1', 'value': 18},
-    {'item': 'Öğe2', 'value': 26},
-    {'item': 'Öğe3', 'value': 23},
-    {'item': 'Öğe4', 'value': 35},
-    {'item': 'Öğe5', 'value': 36},
+    {'item': 'Minnie', 'value': 18},
+    {'item': 'Happy', 'value': 26},
+    {'item': 'Beautiful', 'value': 23},
+    {'item': 'Sad', 'value': 35},
+    {'item': 'Sweet', 'value': 36},
   ];
 
   @override
@@ -133,10 +133,10 @@ class _LoginPageState extends State<GraphicPage> {
                                   child: Column(
                                     children: [
                                       const Text(
-                                        "Öğrencinizin Psikolojileri",
+                                        "Your student's psychology",
                                         style: TextStyle(
                                             fontFamily: "Poppins",
-                                            fontSize: 25,
+                                            fontSize: 22,
                                             fontWeight: FontWeight.bold,
                                             color: Colors.white),
                                       ),
@@ -167,7 +167,7 @@ class _LoginPageState extends State<GraphicPage> {
                                                   ),
                                                   hint: const Center(
                                                     child: Text(
-                                                      "Ders Seçin",
+                                                      "Select Course",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       style: TextStyle(
@@ -211,7 +211,7 @@ class _LoginPageState extends State<GraphicPage> {
                                                   }),
                                             ),
                                           )),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 10,
                                       ),
                                       Container(
@@ -238,7 +238,7 @@ class _LoginPageState extends State<GraphicPage> {
                                                   ),
                                                   hint: const Center(
                                                     child: Text(
-                                                      "Hafta Seçin",
+                                                      "Select Week",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       style: TextStyle(
@@ -307,7 +307,7 @@ class _LoginPageState extends State<GraphicPage> {
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Text(
-                                              "Pc Dersi:",
+                                              "Pc Lesson:",
                                               textAlign: TextAlign.start,
                                               style: TextStyle(
                                                   fontFamily: "Poppins",
@@ -384,7 +384,7 @@ class _LoginPageState extends State<GraphicPage> {
                                                   : anaRenk),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 5,
                                       ),
                                       GestureDetector(
@@ -404,7 +404,7 @@ class _LoginPageState extends State<GraphicPage> {
                                                   : anaRenk),
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         width: 5,
                                       ),
                                       GestureDetector(
@@ -447,11 +447,11 @@ class _LoginPageState extends State<GraphicPage> {
       height: 300,
       child: Chart(
         data: const [
-          {'genre': 'Minnoş', 'sold': 16.7},
-          {'genre': 'Mutlu', 'sold': 16.7},
-          {'genre': 'Güzel', 'sold': 16.7},
-          {'genre': 'Üzgün', 'sold': 33.3},
-          {'genre': 'Tatlı', 'sold': 16.7},
+          {'genre': 'Minnie', 'sold': 16.7},
+          {'genre': 'Happy', 'sold': 16.7},
+          {'genre': 'Beautiful', 'sold': 16.7},
+          {'genre': 'Sad', 'sold': 33.3},
+          {'genre': 'Sweet', 'sold': 16.7},
         ],
         variables: {
           'genre': Variable(
@@ -516,11 +516,11 @@ class _LoginPageState extends State<GraphicPage> {
       height: 300,
       child: Chart(
         data: const [
-          {'item': 'Öğe1', 'value': 18},
-          {'item': 'Öğe2', 'value': 26},
-          {'item': 'Öğe3', 'value': 23},
-          {'item': 'Öğe4', 'value': 35},
-          {'item': 'Öğe5', 'value': 36},
+          {'item': 'Minnie', 'value': 18},
+          {'item': 'Happy', 'value': 26},
+          {'item': 'Beautiful', 'value': 23},
+          {'item': 'Sad', 'value': 35},
+          {'item': 'Sweet', 'value': 36},
         ],
         variables: {
           'item': Variable(
@@ -576,7 +576,7 @@ class _LoginPageState extends State<GraphicPage> {
               width: 1.0, // Underline thickness
             ))),
             child: const Text(
-              "Yapay Zeka Önerisi:",
+              "Artificial Intelligence Proposal:",
               textAlign: TextAlign.start,
               style: TextStyle(
                   fontFamily: "Poppins",
@@ -602,7 +602,7 @@ class _LoginPageState extends State<GraphicPage> {
             height: 20,
           ),
           const Text(
-            "Ölüm ölüm dediğin nedir ki gülüm, ben senin için yaşamayı göze almışım...",
+            "Your lessons are fun and enjoyable for your students.",
             textAlign: TextAlign.start,
             style: TextStyle(
                 fontFamily: "Poppins",

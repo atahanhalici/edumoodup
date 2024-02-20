@@ -114,16 +114,16 @@ class _RegisterPageState extends State<TeacherAccountSettingsPage> {
                                   const SizedBox(
                                     height: 50,
                                   ),
-                                  kutucuklar("Şifre Değiştir", Icons.person,
+                                  kutucuklar("Change Password", Icons.person,
                                       () {
                                     Navigator.pushNamed(
                                         context, "/changePassword");
                                   }),
-                                  kutucuklar("Hakkımızda", Icons.info, () {
+                                  kutucuklar("About Us", Icons.info, () {
                                     Navigator.pushNamed(
                                         context, "/aboutApplication");
                                   }),
-                                  kutucuklar("Web Sitemiz", Icons.public,
+                                  kutucuklar("Our Website", Icons.public,
                                       () async {
                                     await launchUrlString(
                                       "https://edumoodup.com/",
@@ -131,8 +131,7 @@ class _RegisterPageState extends State<TeacherAccountSettingsPage> {
                                           .externalNonBrowserApplication,
                                     );
                                   }),
-                                  kutucuklar("Geliştirici Ekip", Icons.group,
-                                      () {
+                                  kutucuklar("Developer Team", Icons.group, () {
                                     Navigator.pushNamed(
                                         context, "/developerGroup");
                                   }),
@@ -155,7 +154,7 @@ class _RegisterPageState extends State<TeacherAccountSettingsPage> {
                                           color: ikinciRenk),
                                       child: const Center(
                                         child: Text(
-                                          "Çıkış Yap",
+                                          "Sign Out",
                                           style: TextStyle(
                                               fontFamily: "Poppins",
                                               fontSize: 20,
@@ -169,7 +168,7 @@ class _RegisterPageState extends State<TeacherAccountSettingsPage> {
                               ),
                             ),
                           ),
-                          const Text("Tüm hakları saklıdır ©",
+                          const Text("All rights reserved ©",
                               style: TextStyle(
                                 fontFamily: "Poppins",
                                 fontSize: 12,

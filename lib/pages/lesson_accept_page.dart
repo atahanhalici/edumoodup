@@ -10,8 +10,8 @@ class LessonAcceptPage extends StatefulWidget {
 
 class _RegisterPageState extends State<LessonAcceptPage> {
   final List<String> _tumDersler = [
-    "Bilgisayar Mühendisliğine Giriş ve Etik",
-    "Yazılım Tanımlı Ağ Temelleri"
+    "Introduction to Computer Engineering and Ethics",
+    "Software Defined Networking Fundamentals"
   ];
   String? ders;
   @override
@@ -55,7 +55,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  const Text("Kayıt Onayı",
+                                  const Text("Registration Confirmation",
                                       style: TextStyle(
                                         fontFamily: "Poppins",
                                         fontSize: 35,
@@ -66,7 +66,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                                     height: 20,
                                   ),
                                   const Text(
-                                    "Dersinize Kayıt Yapmak İsteyen Öğrencilerin Taleplerini Buradan Yanıtlayabilirsiniz.",
+                                    "You can respond to the requests of students who want to enroll in your course here.",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: "Poppins",
@@ -77,7 +77,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                                     height: 50,
                                   ),
                                   const Text(
-                                    "Ders Seçimi",
+                                    "Course Selection",
                                     style: TextStyle(
                                         fontFamily: "Poppins",
                                         color: Colors.black,
@@ -87,7 +87,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                                   const SizedBox(
                                     height: 20,
                                   ),
-                                  DropDown("Ders Adı", _tumDersler, ders),
+                                  DropDown("Course Name", _tumDersler, ders),
                                   const SizedBox(
                                     height: 20,
                                   ),
@@ -112,7 +112,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
     return Column(
       children: [
         const Text(
-          "Onay Bekleyen Öğrenciler",
+          "Students Pending Approval",
           style: TextStyle(
               fontFamily: "Poppins",
               color: Colors.black,
@@ -135,7 +135,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      "Tümünü Onayla",
+                      "Confirm All",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           color: Colors.white,
@@ -155,7 +155,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      "Tümünü Reddet",
+                      "Reject All",
                       style: TextStyle(
                           fontFamily: "Poppins",
                           color: Colors.white,
@@ -190,7 +190,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                           height: 6,
                         ),
                         Text(
-                          'İsim - Soyisim',
+                          'Name - Surname',
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                               fontFamily: "Poppins",
@@ -215,7 +215,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                           height: 6,
                         ),
                         Text(
-                          'İşlem',
+                          'Process',
                           overflow: TextOverflow.ellipsis,
                           style: TextStyle(
                               fontFamily: "Poppins",
@@ -270,7 +270,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
-                                "Onayla",
+                                "Approve",
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     color: Colors.white,
@@ -291,7 +291,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
-                                "Reddet",
+                                "Refuse",
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     color: Colors.white,
@@ -345,7 +345,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
-                                "Onayla",
+                                "Approve",
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     color: Colors.white,
@@ -366,7 +366,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
-                                "Reddet",
+                                "Refuse",
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     color: Colors.white,
@@ -420,7 +420,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
-                                "Onayla",
+                                "Approve",
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     color: Colors.white,
@@ -441,7 +441,7 @@ class _RegisterPageState extends State<LessonAcceptPage> {
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
-                                "Reddet",
+                                "Refuse",
                                 style: TextStyle(
                                     fontFamily: "Poppins",
                                     color: Colors.white,

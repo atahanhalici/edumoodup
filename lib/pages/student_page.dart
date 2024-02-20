@@ -97,7 +97,7 @@ class _LoginPageState extends State<StudentPage> {
                               height: 30,
                             ),
                             const Text(
-                              "Merhaba Atahan 🖐️",
+                              "Hello Atahan 🖐️",
                               style: TextStyle(
                                   fontFamily: "Poppins",
                                   fontSize: 34,
@@ -124,7 +124,7 @@ class _LoginPageState extends State<StudentPage> {
                                       width: 15,
                                     ),
                                     const Text(
-                                      "Güneşli",
+                                      "Sunny",
                                       style: TextStyle(
                                           fontFamily: "Poppins",
                                           fontSize: 25,
@@ -185,7 +185,7 @@ class _LoginPageState extends State<StudentPage> {
                                     height: 10,
                                   ),
                                   const Text(
-                                    "Bugünün Dersleri",
+                                    "Today's Lessons",
                                     style: TextStyle(
                                         fontFamily: "Poppins",
                                         fontSize: 30,
@@ -195,11 +195,11 @@ class _LoginPageState extends State<StudentPage> {
                                   const SizedBox(
                                     height: 20,
                                   ),
-                                  dersKutu("13.00", "Matematik 1", size),
-                                  dersKutu("15.00", "Fizik 2", size),
+                                  dersKutu("13.00", "Mathematics 1", size),
+                                  dersKutu("15.00", "Physics 2", size),
                                   dersKutu(
-                                      "17.00", "Sinyaller ve Sistemler", size),
-                                  dersKutu("19.00", "Uzay", size),
+                                      "17.00", "Signals and Systems", size),
+                                  dersKutu("19.00", "Space", size),
                                   const SizedBox(
                                     height: 10,
                                   ),
@@ -266,7 +266,7 @@ class _LoginPageState extends State<StudentPage> {
                         child: Padding(
                           padding: EdgeInsets.all(8.0),
                           child: Text(
-                            "Tıkla",
+                            "Click",
                             style: TextStyle(
                                 fontFamily: "Poppins",
                                 color: Colors.white,
@@ -307,7 +307,7 @@ class _LoginPageState extends State<StudentPage> {
                   height: 20,
                 ),
                 Text(
-                  "$dersAdi Nasıldı?",
+                  "How it was $dersAdi?",
                   textAlign: TextAlign.center,
                   style: const TextStyle(
                       fontFamily: "Poppins",
@@ -357,7 +357,7 @@ class _LoginPageState extends State<StudentPage> {
                     ),
                     child: const Center(
                       child: Text(
-                        "Girmedim",
+                        "I didn't enter",
                         style: TextStyle(
                             fontFamily: "Poppins",
                             fontSize: 20,

@@ -65,7 +65,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  const Text("Derslerim",
+                                  const Text("My lessons",
                                       style: TextStyle(
                                         fontFamily: "Poppins",
                                         fontSize: 35,
@@ -76,7 +76,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                                     height: 20,
                                   ),
                                   const Text(
-                                    "Mevcut Derslerini Buradan Görüntüleyebilir ve Düzenleyebilirsin",
+                                    "You can view and edit your existing lessons here",
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                       fontFamily: "Poppins",
@@ -88,7 +88,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                                   ),
                                   DersTablosu(),
                                   const Text(
-                                    "Ders Ekle - Çıkar",
+                                    "Add and Remove Courses",
                                     style: TextStyle(
                                         fontFamily: "Poppins",
                                         color: Colors.black,
@@ -110,7 +110,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                                     child: Column(
                                       children: [
                                         const Text(
-                                          "Eklenebilecek Dersler",
+                                          "Courses that can be added",
                                           style: TextStyle(
                                               fontFamily: "Poppins",
                                               color: Colors.black,
@@ -120,12 +120,13 @@ class _RegisterPageState extends State<AddLessonPage> {
                                         const SizedBox(
                                           height: 20,
                                         ),
-                                        Dersler("Fizik 1", fizik),
-                                        Dersler("Matematik 1", mat),
-                                        Dersler("Temel Elektronik", elektronik),
-                                        Dersler("Web Programlama", web),
-                                        Dersler("Mobil Programlama", mobil),
-                                        Dersler("Görsel Programlama", gorsel),
+                                        Dersler("Physics 1", fizik),
+                                        Dersler("Mathematics 1", mat),
+                                        Dersler(
+                                            "Basic Electronics", elektronik),
+                                        Dersler("Web Programming", web),
+                                        Dersler("Mobile Programming", mobil),
+                                        Dersler("Visual Programming", gorsel),
                                         const SizedBox(
                                           height: 20,
                                         ),
@@ -143,7 +144,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                                           color: ikinciRenk),
                                       child: const Center(
                                         child: Text(
-                                          "Kaydet",
+                                          "Save",
                                           style: TextStyle(
                                               fontFamily: "Poppins",
                                               fontSize: 20,
@@ -171,7 +172,7 @@ class _RegisterPageState extends State<AddLessonPage> {
     return Column(
       children: [
         const Text(
-          "Mevcut Derslerim",
+          "My Current Courses",
           style: TextStyle(
               fontFamily: "Poppins",
               color: Colors.black,
@@ -194,7 +195,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      'Ders',
+                      'Lesson',
                       style: TextStyle(
                           fontFamily: "Poppins",
                           color: Colors.black,
@@ -207,7 +208,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      'Öğretmen',
+                      'Teacher',
                       style: TextStyle(
                           fontFamily: "Poppins",
                           color: Colors.black,
@@ -224,7 +225,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      'Uzay',
+                      'Space',
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -256,7 +257,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      'Sinyaller ve Sistemler',
+                      'Signals and Systems',
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -288,7 +289,7 @@ class _RegisterPageState extends State<AddLessonPage> {
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Text(
-                      'Fizik 2',
+                      'Physics 2',
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
                         fontFamily: "Poppins",
@@ -332,28 +333,28 @@ class _RegisterPageState extends State<AddLessonPage> {
             Checkbox(
               checkColor: Colors.white,
               activeColor: ikinciRenk,
-              value: adi == "Fizik 1"
+              value: adi == "Physics 1"
                   ? fizik
-                  : adi == "Matematik 1"
+                  : adi == "Mathematics 1"
                       ? mat
-                      : adi == "Temel Elektronik"
+                      : adi == "Basic Electronics"
                           ? elektronik
-                          : adi == "Web Programlama"
+                          : adi == "Web Programming"
                               ? web
-                              : adi == "Mobil Programlama"
+                              : adi == "Mobile Programming"
                                   ? mobil
                                   : gorsel,
               onChanged: (bool? value) {
                 setState(() {
-                  adi == "Fizik 1"
+                  adi == "Physics 1"
                       ? fizik = value!
-                      : adi == "Matematik 1"
+                      : adi == "Mathematics 1"
                           ? mat = value!
-                          : adi == "Temel Elektronik"
+                          : adi == "Basic Electronics"
                               ? elektronik = value!
-                              : adi == "Web Programlama"
+                              : adi == "Web Programming"
                                   ? web = value!
-                                  : adi == "Mobil Programlama"
+                                  : adi == "Mobile Programming"
                                       ? mobil = value!
                                       : gorsel = value!;
                 });
@@ -362,15 +363,15 @@ class _RegisterPageState extends State<AddLessonPage> {
             GestureDetector(
               onTap: () {
                 setState(() {
-                  adi == "Fizik 1"
+                  adi == "Physics 1"
                       ? fizik = !fizik
-                      : adi == "Matematik 1"
+                      : adi == "Mathematics 1"
                           ? mat = !mat
-                          : adi == "Temel Elektronik"
+                          : adi == "Basic Electronics"
                               ? elektronik = !elektronik
-                              : adi == "Web Programlama"
+                              : adi == "Web Programming"
                                   ? web = !web
-                                  : adi == "Mobil Programlama"
+                                  : adi == "Mobile Programming"
                                       ? mobil = !mobil
                                       : gorsel = !gorsel;
                 });
@@ -458,16 +459,16 @@ class _RegisterPageState extends State<AddLessonPage> {
                           faculty = null;
                           chapter = null;
                           _tumFakulteler = [
-                            "Mühendislik - Mimarlık Fakültesi",
-                            "Eczacılık Fakültesi"
+                            "Faculty of Engineering - Architecture",
+                            "Faculty of Pharmacy"
                           ];
                           _tumBolumler = [];
                         } else if (adi == "FACULTY") {
                           faculty = yeni!;
                           chapter = null;
                           _tumBolumler = [
-                            "Bilgisayar Mühendisliği",
-                            "Elektrik - Elektronik Mühendisliği"
+                            "Computer Engineering",
+                            "Electrical and Electronics Engineering"
                           ];
                         } else {
                           chapter = yeni!;
@@ -527,10 +528,10 @@ class _RegisterPageState extends State<AddLessonPage> {
             ),
             validator: (deger) {
               if (deger!.isEmpty) {
-                return "${ozellik[0] + ozellik.substring(1).toLowerCase()} Kısmı Boş Bırakılamaz!";
+                return "${ozellik[0] + ozellik.substring(1).toLowerCase()} Part cannot be left blank!";
               } else if (ozellik == "E-MAIL") {
                 if ((!deger.contains("@") || !deger.contains("."))) {
-                  return "Geçersiz Mail Formatı. Lütfen Kontrol Ediniz";
+                  return "Invalid Mail Format. Please Check";
                 }
               } else {}
               return null;

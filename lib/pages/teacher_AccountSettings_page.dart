@@ -3,14 +3,14 @@ import 'package:edumoodup/const.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
-class AccountSettingsPage extends StatefulWidget {
-  const AccountSettingsPage({Key? key}) : super(key: key);
+class TeacherAccountSettingsPage extends StatefulWidget {
+  const TeacherAccountSettingsPage({Key? key}) : super(key: key);
 
   @override
-  State<AccountSettingsPage> createState() => _RegisterPageState();
+  State<TeacherAccountSettingsPage> createState() => _RegisterPageState();
 }
 
-class _RegisterPageState extends State<AccountSettingsPage> {
+class _RegisterPageState extends State<TeacherAccountSettingsPage> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -26,14 +26,13 @@ class _RegisterPageState extends State<AccountSettingsPage> {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushReplacementNamed(
-                            context, "/discontinuty");
+                        Navigator.pushReplacementNamed(context, "/graphic");
                       },
                       child: Container(
                         color: Colors.transparent,
                         width: size.width / 3,
                         child: const Icon(
-                          Icons.alarm,
+                          Icons.graphic_eq,
                           color: Colors.white,
                           size: 40,
                         ),

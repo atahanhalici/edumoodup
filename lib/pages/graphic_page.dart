@@ -82,7 +82,7 @@ class _LoginPageState extends State<GraphicPage> {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/accountSettings");
+                        Navigator.pushNamed(context, "/teacherAccountSettings");
                       },
                       child: Container(
                         color: Colors.transparent,

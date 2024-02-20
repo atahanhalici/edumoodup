@@ -1,5 +1,6 @@
 import 'package:edumoodup/const.dart';
 import 'package:edumoodup/pages/login_page.dart';
+import 'package:edumoodup/pages/splash_page.dart';
 import 'package:edumoodup/route_generator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: anaRenk),
         useMaterial3: true,
       ),
-      home: const LoginPage(),
+      home: const SplashPage(),
     );
   }
 }

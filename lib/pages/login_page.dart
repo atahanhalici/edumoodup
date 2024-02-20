@@ -1,7 +1,6 @@
 import 'package:edumoodup/const.dart';
 import 'package:flutter/material.dart';
 
-
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -112,8 +111,7 @@ class _LoginPageState extends State<LoginPage> {
                                   ),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.pushReplacementNamed(
-                                          context, "/register");
+                                      Navigator.pushNamed(context, "/register");
                                     },
                                     child: const Text(
                                       "Signup !",

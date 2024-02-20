@@ -1,5 +1,6 @@
 import 'package:edumoodup/const.dart';
 import 'package:flutter/material.dart';
+import 'package:graphic/graphic.dart';
 
 class TeacherPage extends StatefulWidget {
   const TeacherPage({
@@ -54,7 +55,7 @@ class _LoginPageState extends State<TeacherPage> {
                   Expanded(
                     child: GestureDetector(
                       onTap: () {
-                        Navigator.pushNamed(context, "/accountSettings");
+                        Navigator.pushNamed(context, "/teacherAccountSettings");
                       },
                       child: Container(
                         color: Colors.transparent,
@@ -175,6 +176,7 @@ class _LoginPageState extends State<TeacherPage> {
                             const SizedBox(
                               height: 20,
                             ),
+                            dersKayitKutu(),
                             Container(
                               decoration: BoxDecoration(
                                   color: ikinciRenk,
@@ -212,6 +214,100 @@ class _LoginPageState extends State<TeacherPage> {
                     ),
                   )
                 ]))));
+  }
+
+  Widget dersKayitKutu() {
+    return GestureDetector(
+      onTap: () {
+        Navigator.pushNamed(context, "/lessonAccept");
+      },
+      child: Column(
+        children: [
+          Container(
+            width: double.infinity,
+            decoration: BoxDecoration(
+                color: ikinciRenk, borderRadius: BorderRadius.circular(20)),
+            child: Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Stack(
+                children: [
+                  Positioned(
+                      right: 0,
+                      bottom: 0,
+                      child: Transform.rotate(
+                        angle: 0.3,
+                        child: const Icon(
+                          Icons.notifications,
+                          size: 40,
+                          color: Colors.orangeAccent,
+                        ),
+                      )),
+                  Wrap(
+                    //mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const SizedBox(
+                        height: 15,
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.only(top: 2.0, bottom: 2),
+                        child: Text(
+                          "Derslerinize Kaydolmak",
+                          style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.all(2.0),
+                        child: Text(
+                          "İçin Bekleyen",
+                          style: TextStyle(
+                              fontFamily: "Poppins",
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                      Row(
+                        children: [
+                          const Text(
+                            "Öğrenci Sayısı:",
+                            style: TextStyle(
+                                fontFamily: "Poppins",
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          const SizedBox(
+                            width: 5,
+                          ),
+                          Text(
+                            "18",
+                            style: TextStyle(
+                                fontFamily: "Poppins",
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                                color: ucuncuRenk),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(
+                        height: 15,
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 20,
+          )
+        ],
+      ),
+    );
   }
 
   dersKutu(String saat, String adi, Size size) {

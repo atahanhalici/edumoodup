@@ -53,7 +53,7 @@ class _LoginPageState extends State<DiscontinuityPage> {
                     child: GestureDetector(
                       onTap: () {
                         Navigator.pushReplacementNamed(
-                            context, "/accountSettings");
+                            context, "/studentAccountSettings");
                       },
                       child: Container(
                         color: Colors.transparent,

@@ -1,5 +1,7 @@
 import 'package:edumoodup/pages/about_application_page.dart';
-import 'package:edumoodup/pages/acccountSettings_page.dart';
+import 'package:edumoodup/pages/lesson_accept_page.dart';
+import 'package:edumoodup/pages/student_AcccountSettings_page.dart';
+import 'package:edumoodup/pages/add_lesson_page.dart';
 import 'package:edumoodup/pages/change_password_page.dart';
 import 'package:edumoodup/pages/developer_group_page.dart';
 import 'package:edumoodup/pages/discontinuity_page.dart';
@@ -8,6 +10,7 @@ import 'package:edumoodup/pages/select_register_page.dart';
 import 'package:edumoodup/pages/student_register_page.dart';
 import 'package:edumoodup/pages/student_page.dart';
 import 'package:edumoodup/pages/graphic_page.dart';
+import 'package:edumoodup/pages/teacher_AccountSettings_page.dart';
 import 'package:edumoodup/pages/teacher_page.dart';
 import 'package:edumoodup/pages/teacher_register_page.dart';
 import 'package:flutter/cupertino.dart';
@@ -39,8 +42,10 @@ class RouteGenerator {
         return _gidilecekrota(const StudentRegisterPage(), settings);
       case '/teacherRegister':
         return _gidilecekrota(const TeacherRegisterPage(), settings);
-      case '/accountSettings':
-        return _gidilecekrota(const AccountSettingsPage(), settings);
+      case '/studentAccountSettings':
+        return _gidilecekrota(const StudentAccountSettingsPage(), settings);
+      case '/teacherAccountSettings':
+        return _gidilecekrota(const TeacherAccountSettingsPage(), settings);
       case '/discontinuty':
         return _gidilecekrota(const DiscontinuityPage(), settings);
       case '/student':
@@ -55,7 +60,10 @@ class RouteGenerator {
         return _gidilecekrota(const DeveloperGroupPage(), settings);
       case '/changePassword':
         return _gidilecekrota(const ChangePasswordPage(), settings);
-
+      case '/addLesson':
+        return _gidilecekrota(const AddLessonPage(), settings);
+      case '/lessonAccept':
+        return _gidilecekrota(const LessonAcceptPage(), settings);
       default:
         return _gidilecekrota(const LoginPage(), settings);
     }

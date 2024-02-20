@@ -13,10 +13,6 @@ class _RegisterPageState extends State<TeacherRegisterPage> {
   final List<String> _tumUniversiteler = [
     "Erzincan Binali Yıldırım University",
   ];
-  String? faculty;
-  List<String> _tumFakulteler = [];
-  String? chapter;
-  List<String> _tumBolumler = [];
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -83,8 +79,10 @@ class _RegisterPageState extends State<TeacherRegisterPage> {
                                       ),
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.pushReplacementNamed(
-                                              context, "/login");
+                                          Navigator.pushNamedAndRemoveUntil(
+                                              context,
+                                              "/login",
+                                              (route) => false);
                                         },
                                         child: const Text(
                                           "Log in here.",
@@ -104,8 +102,6 @@ class _RegisterPageState extends State<TeacherRegisterPage> {
                                   TextArea("PASSWORD"),
                                   DropDown("UNIVERSİTY", _tumUniversiteler,
                                       university),
-                                  DropDown("FACULTY", _tumFakulteler, faculty),
-                                  DropDown("CHAPTER", _tumBolumler, chapter),
                                   const SizedBox(
                                     height: 20,
                                   ),
@@ -199,32 +195,10 @@ class _RegisterPageState extends State<TeacherRegisterPage> {
                           ),
                         )
                         .toList(),
-                    value: adi == "UNIVERSİTY"
-                        ? university
-                        : adi == "FACULTY"
-                            ? faculty
-                            : chapter,
+                    value: university,
                     onChanged: (String? yeni) {
                       setState(() {
-                        if (adi == "UNIVERSİTY") {
-                          university = yeni!;
-                          faculty = null;
-                          chapter = null;
-                          _tumFakulteler = [
-                            "Mühendislik - Mimarlık Fakültesi",
-                            "Eczacılık Fakültesi"
-                          ];
-                          _tumBolumler = [];
-                        } else if (adi == "FACULTY") {
-                          faculty = yeni!;
-                          chapter = null;
-                          _tumBolumler = [
-                            "Bilgisayar Mühendisliği",
-                            "Elektrik - Elektronik Mühendisliği"
-                          ];
-                        } else {
-                          chapter = yeni!;
-                        }
+                        university = yeni!;
                       });
                     }),
               ),
